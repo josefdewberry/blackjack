@@ -4,6 +4,7 @@
 #include <vector>
 
 enum Suit { CLUBS, DIAMONDS, HEARTS, SPADES };
+enum Move { DRAW, STAND };
 
 struct Card
 {
@@ -20,5 +21,11 @@ class Deck
 
         Deck();
 };
+
+struct Player
+{
+    std::vector<Card> hand;
+    printHand();
+}
 
 #endif
